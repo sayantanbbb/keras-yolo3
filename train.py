@@ -3,11 +3,11 @@ Retrain the YOLO model for your own dataset.
 """
 
 import numpy as np
-import tf.keras.backend as K
-from tf.keras.layers import Input, Lambda
-from tf.keras.models import Model
-from tf.keras.optimizers import Adam
-from tf.keras.callbacks import TensorBoard, ModelCheckpoint, ReduceLROnPlateau, EarlyStopping
+import tensorflow.keras.backend as K
+from tensorflow.keras.layers import Input, Lambda
+from tensorflow.keras.models import Model
+from tensorflow.keras.optimizers import Adam
+from tensorflow.keras.callbacks import TensorBoard, ModelCheckpoint, ReduceLROnPlateau, EarlyStopping
 
 from yolo3.model import preprocess_true_boxes, yolo_body, tiny_yolo_body, yolo_loss
 from yolo3.utils import get_random_data
