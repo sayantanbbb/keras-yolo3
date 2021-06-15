@@ -11,14 +11,14 @@ import os
 from collections import defaultdict
 
 import numpy as np
-from tf.keras import backend as K
-from tf.keras.layers import (Conv2D, Input, ZeroPadding2D, Add,
+from tensorflow.keras import backend as K
+from tensorflow.keras.layers import (Conv2D, Input, ZeroPadding2D, Add,
                           UpSampling2D, MaxPooling2D, Concatenate)
-from tf.keras.layers.advanced_activations import LeakyReLU
-from tf.keras.layers.normalization import BatchNormalization
-from tf.keras.models import Model
-from tf.keras.regularizers import l2
-from tf.keras.utils.vis_utils import plot_model as plot
+from tensorflow.keras.layers.advanced_activations import LeakyReLU
+from tensorflow.keras.layers.normalization import BatchNormalization
+from tensorflow.keras.models import Model
+from tensorflow.keras.regularizers import l2
+from tensorflow.keras.utils.vis_utils import plot_model as plot
 
 
 parser = argparse.ArgumentParser(description='Darknet To Keras Converter.')
