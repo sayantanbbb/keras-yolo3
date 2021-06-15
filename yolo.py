@@ -8,9 +8,9 @@ import os
 from timeit import default_timer as timer
 
 import numpy as np
-from tf.keras import backend as K
-from tf.keras.models import load_model
-from tf.keras.layers import Input
+from tensorflow.keras import backend as K
+from tensorflow.keras.models import load_model
+from tensorflow.keras.layers import Input
 from PIL import Image, ImageFont, ImageDraw
 
 from yolo3.model import yolo_eval, yolo_body, tiny_yolo_body
